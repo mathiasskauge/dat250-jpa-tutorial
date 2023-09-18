@@ -1,6 +1,9 @@
 package no.hvl.dat250.jpa.tutorial.creditcards;
 
 import java.util.Collection;
+import java.util.HashSet;
+import java.util.Set;
+
 import jakarta.persistence.*;
 
 @Entity
@@ -10,6 +13,9 @@ public class Address {
     private Long id;
     private String street;
     private Integer number;
+
+    @ManyToMany
+    private Set<Customer> owners = new HashSet<>();
 
     public String getStreet() {
         return street;
