@@ -21,12 +21,23 @@ public class Address {
         return street;
     }
 
+    public void setStreet(String street) {
+        this.street = street;
+    }
+
     public Integer getNumber() {
         return number;
     }
 
-    public Collection<Customer> getOwners() {
-        // TODO: implement method!
-        return null;
+    public void setNumber(Integer number) {
+        this.number = number;
+    }
+
+    public Set<Customer> getOwners() {
+        return owners;
+    }
+
+    public void addOwner(Customer customer) {
+        owners.add(customer);
     }
 }

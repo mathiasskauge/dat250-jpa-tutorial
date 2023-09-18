@@ -17,8 +17,16 @@ public class Pincode {
     public String getCode() {
         return pincode;
     }
+    public void setCode(String pincode) {
+        this.pincode = pincode;
+    }
 
     public Integer getCount() {
         return count;
+    }
+
+
+    public void setCount(Integer count) {
+        this.count = count;
     }
 }
